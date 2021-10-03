@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
+.header--headline {
+  font-size: 2.5rem;
+}
+
+.header--headline::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/logo.png);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2.5rem;
+  margin-right: 0.2rem;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  background-color: #031a6b;
+}
+
+.nav {
+  background-color: #031a6b;
+  margin-top: -1px;
+}
+
+.nav::before {
+  content: '';
+  position: absolute;
+  right: 0.7rem;
+  top: 1rem;
+  display: block;
+  height: 1.8rem;
+  width: 1.8rem;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(20%, #ffffff), color-stop(20%, #031a6b), color-stop(40%, #031a6b), color-stop(40%, #ffffff), color-stop(60%, #ffffff), color-stop(60%, #031a6b), color-stop(80%, #031a6b), color-stop(80%, #ffffff), to(#ffffff));
+  background: linear-gradient(to bottom, #ffffff, #ffffff 20%, #031a6b 20%, #031a6b 40%, #ffffff 40%, #ffffff 60%, #031a6b 60%, #031a6b 80%, #ffffff 80%, #ffffff 100%);
+}
+
+@media screen and (min-width: 35rem) {
+  .nav::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 35rem) {
+  .nav {
+    position: relative;
+  }
+}
+
+.nav__list {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 35rem) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .nav__list--close {
+    display: none;
+  }
+}
+
+.nav__item {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav__item:hover, .nav__item:focus {
+  background-color: #fdca40;
+  color: #000000;
+}
+
+.nav__li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+@media screen and (min-width: 35rem) {
+  .courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.course {
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.course__headline {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.course__picture {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 15rem;
+  margin: 1rem auto;
+}
+
+.course__picture--1 {
+  background-image: url(../img/kruh.jpg);
+}
+
+.course__picture--2 {
+  background-image: url(../img/zavislost.jpg);
+}
+
+.course__picture--3 {
+  background-image: url(../img/zamilovani.jpg);
+}
+
+.footer {
+  width: 100%;
+  height: 3rem;
+  background-color: #031a6b;
+}
+
+.footer__text {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  max-width: 45rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  background-color: #e6e8e6;
+}
+
+main {
+  margin: 1rem;
+}
+
+.headline__section {
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.headline__section::after {
+  content: ' ';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #fdca40;
+  margin: 0.3rem 0 0 -1rem;
+}
+/*# sourceMappingURL=style.css.map */

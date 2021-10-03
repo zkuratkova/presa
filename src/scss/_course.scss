@@ -1,0 +1,36 @@
+@media screen and (min-width: 35rem) {
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.course {
+  text-align: center;
+  flex: 0 0 50%;
+}
+
+.course__headline {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.course__picture {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 15rem;
+  margin: 1rem auto;
+}
+
+.course__picture--1 {
+  background-image: url(../img/kruh.jpg);
+}
+
+.course__picture--2 {
+  background-image: url(../img/zavislost.jpg);
+}
+
+.course__picture--3 {
+  background-image: url(../img/zamilovani.jpg);
+}
