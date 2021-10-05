@@ -8,7 +8,7 @@ const Dashboard = () => {
     return <Login setToken={setToken} />;
   }
 
-  return <h2>what are you doing?</h2>;
+  return <h2>What do you think you are doing?</h2>;
 };
 
 export default Dashboard;
