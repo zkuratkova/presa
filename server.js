@@ -10,6 +10,11 @@ app.use('/login', (req, res) => {
   });
 });
 
+<<<<<<< HEAD
 app.listen(8080, () =>
   console.log('API is running on http://localhost:8080/login'),
+=======
+app.listen(3000, () =>
+  console.log('API is running on http://localhost:3000/login'),
+>>>>>>> 50d174c... step 2
 );
