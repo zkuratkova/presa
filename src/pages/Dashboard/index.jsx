@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Login from '../../components/Login';
+import useToken from './useToken';
 
 const Dashboard = () => {
-  const [token, setToken] = useState();
+  const { token, setToken } = useToken();
 
   if (!token) {
     return <Login setToken={setToken} />;

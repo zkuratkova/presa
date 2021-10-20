@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import 'regenerator-runtime/runtime';
 
 async function loginUser(credentials) {
-<<<<<<< HEAD
-  return fetch('http://localhost:8080/login', {
-=======
   return fetch('http://localhost:3000/login', {
->>>>>>> 50d174c... step 2
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
